@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#E0E0E0"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+<!--
+
+   <android.support.v7.widget.CardView
+       app:layout_constraintTop_toTopOf="parent"
+       app:cardBackgroundColor="#E0E0E0"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+-->
+
+
+
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Name"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+
+           <TextView
+               android:id="@+id/txtName"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <View
+               android:id="@+id/nameView"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/name"
+               app:layout_constraintRight_toRightOf="@id/txtName"
+               app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+
+           <TextView
+               android:id="@+id/standard"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Standard"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/nameView" />
+
+
+           <TextView
+               android:id="@+id/txtstandard"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Name"
+
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/nameView" />
+
+           <View
+               android:id="@+id/viewStandard"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/standard"
+               app:layout_constraintRight_toRightOf="@id/txtstandard"
+               app:layout_constraintTop_toBottomOf="@id/txtstandard" />
+
+
+           <TextView
+               android:id="@+id/section"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Section"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/viewStandard" />
+
+
+           <TextView
+               android:id="@+id/txtsection"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Name"
+
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/viewStandard" />
+
+           <View
+               android:id="@+id/sectionview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/section"
+               app:layout_constraintRight_toRightOf="@id/txtsection"
+               app:layout_constraintTop_toBottomOf="@id/txtsection" />
+
+
+           <TextView
+               android:id="@+id/gender"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Gender"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/sectionview" />
+
+
+           <TextView
+               android:id="@+id/txtgender"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+
+               android:textColor="#000"
+               android:text="Male"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/sectionview" />
+
+           <View
+               android:id="@+id/genderview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/gender"
+               app:layout_constraintRight_toRightOf="@id/txtgender"
+               app:layout_constraintTop_toBottomOf="@id/txtgender" />
+
+
+           <TextView
+               android:id="@+id/dateofbirth"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Date of Birth"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/genderview" />
+
+
+           <TextView
+               android:id="@+id/txtdateofbirth"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/genderview" />
+
+           <View
+               android:id="@+id/dateofbirthview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/dateofbirth"
+               app:layout_constraintRight_toRightOf="@id/txtdateofbirth"
+               app:layout_constraintTop_toBottomOf="@id/txtdateofbirth" />
+
+
+           <TextView
+               android:id="@+id/bloodgroup"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Blood Group"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/dateofbirthview" />
+
+
+           <TextView
+               android:id="@+id/txtbloodgroup"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="A"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/dateofbirthview" />
+
+           <View
+               android:id="@+id/bloodgroupview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/bloodgroup"
+               app:layout_constraintRight_toRightOf="@id/txtbloodgroup"
+               app:layout_constraintTop_toBottomOf="@id/txtbloodgroup" />
+
+
+           <TextView
+               android:id="@+id/isdayscholoar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Is dayScholoar"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/bloodgroupview" />
+
+
+           <TextView
+               android:id="@+id/txtisdayscholoar"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Yes"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/bloodgroupview" />
+
+           <View
+               android:id="@+id/isdayscholoarview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/isdayscholoar"
+               app:layout_constraintRight_toRightOf="@id/txtisdayscholoar"
+               app:layout_constraintTop_toBottomOf="@id/txtisdayscholoar" />
+
+
+           <TextView
+               android:id="@+id/busno"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Bus No."
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/isdayscholoarview" />
+
+
+           <TextView
+               android:id="@+id/txtbusno"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Yes"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               android:textColor="#000"
+               app:layout_constraintTop_toBottomOf="@id/isdayscholoarview" />
+
+           <View
+               android:id="@+id/busnoview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/busno"
+               app:layout_constraintRight_toRightOf="@id/txtbusno"
+               app:layout_constraintTop_toBottomOf="@id/txtbusno" />
+
+
+           <TextView
+               android:id="@+id/admssionno"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Admission No."
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/busnoview" />
+
+
+           <TextView
+               android:id="@+id/txtadmssionno"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/busnoview" />
+
+           <View
+               android:id="@+id/admssionnoview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/admssionno"
+               app:layout_constraintRight_toRightOf="@id/txtadmssionno"
+               app:layout_constraintTop_toBottomOf="@id/txtadmssionno" />
+
+
+           <TextView
+               android:id="@+id/address"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Address"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/admssionnoview" />
+
+
+           <TextView
+               android:id="@+id/txtaddress"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/admssionnoview" />
+
+           <View
+               android:id="@+id/addressview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/address"
+               app:layout_constraintRight_toRightOf="@id/txtaddress"
+               app:layout_constraintTop_toBottomOf="@id/txtaddress" />
+
+
+           <TextView
+               android:id="@+id/city"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="City"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/addressview" />
+
+
+           <TextView
+               android:id="@+id/txtcity"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/addressview" />
+
+           <View
+               android:id="@+id/cityview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/city"
+               app:layout_constraintRight_toRightOf="@id/txtcity"
+               app:layout_constraintTop_toBottomOf="@id/txtcity" />
+
+
+           <TextView
+               android:id="@+id/state"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="State"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/cityview" />
+
+
+           <TextView
+               android:id="@+id/txtstate"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Yes"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/cityview" />
+
+           <View
+               android:id="@+id/stateview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/state"
+               app:layout_constraintRight_toRightOf="@id/txtstate"
+               app:layout_constraintTop_toBottomOf="@id/txtstate" />
+
+
+           <TextView
+               android:id="@+id/postalcode"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Postal Code"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/stateview" />
+
+
+           <TextView
+               android:id="@+id/txtpostalcode"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:text="Yes"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/stateview" />
+
+           <View
+               android:id="@+id/postalcodeview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/postalcode"
+               app:layout_constraintRight_toRightOf="@id/txtpostalcode"
+               app:layout_constraintTop_toBottomOf="@id/txtpostalcode" />
+
+
+           <TextView
+               android:id="@+id/contactmobilenumber"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:text="Contact Mobile No."
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/postalcodeview" />
+
+
+           <TextView
+               android:id="@+id/txtcontactmobilenumber"
+               android:layout_width="@dimen/_150sdp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:textColor="#000"
+               android:textAlignment="textEnd"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/postalcodeview" />
+
+           <View
+               android:id="@+id/contactmobilenumberview"
+               android:layout_width="0sp"
+               android:layout_height="@dimen/_1sdp"
+               android:layout_marginLeft="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginRight="@dimen/_5sdp"
+               android:background="#000"
+               app:layout_constraintLeft_toLeftOf="@id/contactmobilenumber"
+               app:layout_constraintRight_toRightOf="@id/txtcontactmobilenumber"
+               app:layout_constraintTop_toBottomOf="@id/txtcontactmobilenumber" />
+
+    <!--   </android.support.constraint.ConstraintLayout>
+   </android.support.v7.widget.CardView>-->
+</android.support.constraint.ConstraintLayout>
+
+

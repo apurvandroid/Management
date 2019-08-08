@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.ProfileFragment">
+
+
+   <ImageView
+       android:id="@+id/im"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_40sdp" />
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/im"
+        app:layout_constraintLeft_toLeftOf="@id/im"
+        app:layout_constraintRight_toRightOf="@id/im"
+        app:layout_constraintBottom_toBottomOf="@id/im"
+        android:text="PROFILE"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="@id/imgBackground"
+            app:layout_constraintLeft_toLeftOf="@id/imgBackground"
+            app:layout_constraintRight_toRightOf="@id/imgBackground"
+            app:layout_constraintTop_toTopOf="@id/imgBackground" />
+
+
+        <com.alespero.expandablecardview.ExpandableCardView
+            android:id="@+id/profile"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            app:expandOnClick="true"
+            app:inner_view="@layout/student_profile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgBackground"
+            app:title="Student Information" />
+
+        <com.alespero.expandablecardview.ExpandableCardView
+            android:id="@+id/profilee"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            app:expandOnClick="true"
+            app:inner_view="@layout/fragment_dash_board"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:title="Parents Information" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
