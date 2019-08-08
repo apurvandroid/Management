@@ -37,7 +37,7 @@ public class ProfileFragment extends Fragment {
 
     private TextView txtName,txtstandard,txtsection,txtgender,txtdateofbirth,txtbloodgroup,txtadmssionno,txtaddress,txtcity,txtcontactmobilenumber;
     private MySharedPrefereence mySharedPrefereence;
-    private String data;
+
 
     public ProfileFragment() {
 
@@ -64,7 +64,7 @@ public class ProfileFragment extends Fragment {
         txtcity=view.findViewById(R.id.txtcity);
         txtcontactmobilenumber=view.findViewById(R.id.txtcontactmobilenumber);
 
-        data="1";
+
         studentDetails(sID);
 
 
