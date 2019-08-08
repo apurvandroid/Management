@@ -64,6 +64,7 @@ public class ProfileFragment extends Fragment {
         txtcity=view.findViewById(R.id.txtcity);
         txtcontactmobilenumber=view.findViewById(R.id.txtcontactmobilenumber);
 
+        data="1";
         studentDetails(sID);
 
 
