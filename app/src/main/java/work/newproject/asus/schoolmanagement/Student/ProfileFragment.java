@@ -37,6 +37,7 @@ public class ProfileFragment extends Fragment {
 
     private TextView txtName,txtstandard,txtsection,txtgender,txtdateofbirth,txtbloodgroup,txtadmssionno,txtaddress,txtcity,txtcontactmobilenumber;
     private MySharedPrefereence mySharedPrefereence;
+    private String data;
 
     public ProfileFragment() {
 
