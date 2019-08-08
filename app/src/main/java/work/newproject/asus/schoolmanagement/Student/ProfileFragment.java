@@ -66,7 +66,7 @@ public class ProfileFragment extends Fragment {
         txtcontactmobilenumber=view.findViewById(R.id.txtcontactmobilenumber);
 
 
-        data="23jheiufugf";
+        data="23jheiufugfjiehhuh";
         studentDetails(sID);
 
 
