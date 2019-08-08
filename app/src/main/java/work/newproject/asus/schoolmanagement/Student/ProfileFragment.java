@@ -39,6 +39,7 @@ public class ProfileFragment extends Fragment {
     private MySharedPrefereence mySharedPrefereence;
 
 
+    String data;
     public ProfileFragment() {
 
     }
@@ -65,6 +66,7 @@ public class ProfileFragment extends Fragment {
         txtcontactmobilenumber=view.findViewById(R.id.txtcontactmobilenumber);
 
 
+        data="1";
         studentDetails(sID);
 
 
