@@ -35,11 +35,9 @@ import work.newproject.asus.schoolmanagement.R;
 
 public class ProfileFragment extends Fragment {
 
-    private TextView txtName,txtstandard,txtsection,txtgender,txtdateofbirth,txtbloodgroup,txtadmssionno,txtaddress,txtcity,txtcontactmobilenumber;
+    private TextView txtName, txtstandard, txtsection, txtgender, txtdateofbirth, txtbloodgroup, txtadmssionno, txtaddress, txtcity, txtcontactmobilenumber;
     private MySharedPrefereence mySharedPrefereence;
 
-
-    String data;
     public ProfileFragment() {
 
     }
@@ -52,21 +50,20 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         ExpandableCardView card = view.findViewById(R.id.profile);
         ExpandableCardView cardView = view.findViewById(R.id.profilee);
-        mySharedPrefereence=new MySharedPrefereence(getContext());
-        String sID=mySharedPrefereence.getSaveStudentID();
+        mySharedPrefereence = new MySharedPrefereence(getContext());
+        String sID = mySharedPrefereence.getSaveStudentID();
         txtName = view.findViewById(R.id.txtName);
-        txtstandard=view.findViewById(R.id.txtstandard);
-        txtsection=view.findViewById(R.id.txtsection);
-        txtgender=view.findViewById(R.id.txtgender);
-        txtdateofbirth=view.findViewById(R.id.txtdateofbirth);
-        txtbloodgroup=view.findViewById(R.id.txtbloodgroup);
-        txtadmssionno=view.findViewById(R.id.txtadmssionno);
-        txtaddress=view.findViewById(R.id.txtaddress);
-        txtcity=view.findViewById(R.id.txtcity);
-        txtcontactmobilenumber=view.findViewById(R.id.txtcontactmobilenumber);
+        txtstandard = view.findViewById(R.id.txtstandard);
+        txtsection = view.findViewById(R.id.txtsection);
+        txtgender = view.findViewById(R.id.txtgender);
+        txtdateofbirth = view.findViewById(R.id.txtdateofbirth);
+        txtbloodgroup = view.findViewById(R.id.txtbloodgroup);
+        txtadmssionno = view.findViewById(R.id.txtadmssionno);
+        txtaddress = view.findViewById(R.id.txtaddress);
+        txtcity = view.findViewById(R.id.txtcity);
+        txtcontactmobilenumber = view.findViewById(R.id.txtcontactmobilenumber);
 
 
-        data="Singh";
         studentDetails(sID);
 
 
@@ -92,16 +89,16 @@ public class ProfileFragment extends Fragment {
             public void onResponse(String response) {
                 System.out.println(response);
                 try {
-                    JSONArray jsonArray=new JSONArray(response);
-                    for (int i=0;i<jsonArray.length();i++){
-                        JSONObject jsonObject=jsonArray.getJSONObject(i);
-                        String name=jsonObject.getString("name");
-                        String student_standard=jsonObject.getString("student_standard");
-                        String dob=jsonObject.getString("dob");
-                        String addmisionno=jsonObject.getString("unique_no");
-                        String student_address=jsonObject.getString("student_address");
-                        String  city=jsonObject.getString("student_address");
-                        String mob=jsonObject.getString("student_mobile");
+                    JSONArray jsonArray = new JSONArray(response);
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = jsonArray.getJSONObject(i);
+                        String name = jsonObject.getString("name");
+                        String student_standard = jsonObject.getString("student_standard");
+                        String dob = jsonObject.getString("dob");
+                        String addmisionno = jsonObject.getString("unique_no");
+                        String student_address = jsonObject.getString("student_address");
+                        String city = jsonObject.getString("student_address");
+                        String mob = jsonObject.getString("student_mobile");
 
 
                         txtName.setText(name);

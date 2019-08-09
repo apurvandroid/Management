@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 
 import static android.content.Context.MODE_PRIVATE;
 
-String string="";
 
 public class MySharedPrefereence {
 
@@ -13,7 +12,6 @@ public class MySharedPrefereence {
     private static final String LOGINSTUDENT = "LOGINSTUDENT";
     private static final String USERSTUDENT = "USERSTUDENT";
 
-    string = "Pransh"
 
 
     private SharedPreferences sharedPreferences;
