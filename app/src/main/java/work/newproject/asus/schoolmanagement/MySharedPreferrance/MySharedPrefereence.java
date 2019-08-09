@@ -5,12 +5,15 @@ import android.content.SharedPreferences;
 
 import static android.content.Context.MODE_PRIVATE;
 
+String string="";
+
 public class MySharedPrefereence {
 
     public static final int MOBILESTUDENT = 1;
     private static final String LOGINSTUDENT = "LOGINSTUDENT";
     private static final String USERSTUDENT = "USERSTUDENT";
 
+    string = "Pransh"
 
 
     private SharedPreferences sharedPreferences;
